@@ -1,0 +1,11 @@
+.accordion {
+  
+}
+
+.accordion__trigger {
+
+}
+
+.accordion__title {
+  pointer-events: none;
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "type": "group",
+    "id": "sections",
+    "label": "Sections",
+    "children": [
+      {
+        "type": "text",
+        "id": "title",
+        "validation_regex": "",
+        "label": "Title",
+        "name": "title"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "name": "content"
+      }
+    ],
+    "name": "sections",
+    "default": {},
+    "occurrence": {
+      "sorting_label_field": "title"
+    }
+  },
+  {
+    "type": "boolean",
+    "id": "allow_multiple",
+    "default": true,
+    "display": "toggle",
+    "label": "Allow Multiple",
+    "name": "allow_multiple"
+  },
+  {
+    "type": "boolean",
+    "id": "allow_toggle",
+    "default": false,
+    "display": "toggle",
+    "label": "Allow Toggle",
+    "name": "allow_toggle",
+    "visibility": {
+      "controlling_field": "allow_multiple",
+      "operator": "NOT_EQUAL",
+      "controlling_value_regex": "true"
+    }
+  }
+]

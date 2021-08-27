@@ -1,0 +1,27 @@
+{% set moduleId = "accordion-{{ name }}" %}
+<div 
+  id="{{ moduleId }}" 
+  class="accordion"
+  {{ module.allow_multiple ? "data-allow-multiple='true'" : "" }}
+  {{ module.allow_multiple || module.allow_toggle ? "data-allow-toggle='true'" : "" }}>
+  {% for section in module.sections %}
+    <h3>
+      <button 
+        aria-expanded="{{ loop.first is truthy ? 'true' : 'false' }}"
+        class="accordion__trigger"
+        aria-controls="{{ moduleId }}-section-{{ loop.index }}"
+        id="{{ moduleId }}-label-{{ loop.index }}">
+        <span class="accordion__title">
+          {{ section.title }}- {{ loop.first }}
+        </span>
+      </button>
+    </h3>
+    <div 
+      id="{{ moduleId }}-section-{{ loop.index }}"
+      role="region"
+      {{ loop.first is truthy ? "" : "hidden" }}
+      aria-labelledby="{{ moduleId }}-label-{{ loop.index }}">
+      {{ section.content }}
+    </div>
+  {% endfor %}
+</div>
