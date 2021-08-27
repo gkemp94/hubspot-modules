@@ -1,7 +1,3 @@
-import { helloWorld } from '../../core/core.js';
-
-console.log(helloWorld());
-
 document.querySelectorAll('.accordion').forEach(function (accordion) {
   const { allowMultiple, allowToggle } = accordion.dataset;
 
