@@ -1,5 +1,9 @@
 .accordion {
-  
+
+}
+
+.accordion__section {
+
 }
 
 .accordion__trigger {
@@ -8,4 +12,8 @@
 
 .accordion__title {
   pointer-events: none;
+}
+
+.accordion__panel {
+
 }

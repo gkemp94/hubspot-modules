@@ -1,0 +1,41 @@
+/* -- Imports -- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* -- Variables -- */
+:root {
+  /* -- Colors -- */
+  --color-primary: #3E7BFA;
+  --color-primary-dark: #3568D4;
+  --color-primary-light: #6698FF;
+
+  --color-grey: #555770;
+  --color-grey-dark: #1C1C28;
+  --color-grey-light: #8F90A6;
+
+  --color-white: #F2F2F5;
+  --color-white-dark: #E4E4EB;
+  --color-white-light: #ffffff;
+}
+
+/* -- Typography -- */
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: -0.02px;
+  line-height: 54px;
+}
+
+h2 {
+  font-size: 32px;
+  letter-spacing: -0.02px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 28px;
+  letter-spacing: -0.02px;
+  line-height: 38px;
+}

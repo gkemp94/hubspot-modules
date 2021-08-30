@@ -32,7 +32,6 @@ document.querySelectorAll('.accordion').forEach(function (accordion) {
     event.preventDefault();
   });
 
-
   accordion.addEventListener('keydown', function (event) {
     const { target, key } = event;
 
